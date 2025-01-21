@@ -1,49 +1,76 @@
 :root{
-    --navBackground:#10ac84;
+    --baseUiBackground:#10ac84;
     --textWhite:#fff;
     --textDarkBrand:#1f1b1b;
     --textBlack:#000;
-    /* ffd014 */
-    /* #211f1f */
+
     --textBgBrand:#1e5b4b;
     --textOrangeBrand:rgb(255,165,0);
+    --textColorTitr:#16a085;
+    --bgCardUi:#e6dede;
 
 }
-
+body{
+    overflow-x: none;
+}
 @font-face {
-    font-family: myFont;
+    font-family: myFontTitr;
     src: url(public/Fonts/B\ TITR\ BOLD.TTF),format('ttf');
+}
+@font-face {
+    font-family: myFontText;
+    src: url(public/Fonts/B\ MITRA\ BOLD.TTF),format('ttf');
 }
 /* utility */
 .textItems{
     cursor: pointer;
     font-weight: bold;
 }
+.myFontText{
+    font-family: myFontText !important;
+}
+.myFontTitr{
+    font-family: myFontTitr !important;
+}
+.iconColor{
+    color: var(--baseUiBackground); 
+}
+.bgCardUi{
+    background-color: var(--bgCardUi);
+}
 .nav-bg{
-    background-color: var(--navBackground);
+    background-color: var(--baseUiBackground);
     color: var(--textWhite);
 
 }
-.textTitr{
-    color: #16a085;
-    font-family: myFont;
-    font-size: x-large;
+/* #navbar{
+   
+} */
+.TitrCustom{
+    background-color: #f65a5a;
+    font-family: myFontTitr !important;
+    font-size: xx-large;
 }
-.items{
+.textTitr{
+    color: var(--textColorTitr);
+    font-family: myFontTitr !important;
+    
+}
+.itemsNavbarText{
     font-size: large;
-    font-family: myFont;
+    font-family: myFontTitr !important;
     color: var(--textBlack);
     div{
         margin-left: 0.5rem;
         margin-right: 0.5rem; 
         :hover{
             opacity: 0.9;
-            color: #fff;
+            color: var(--textWhite);
         }
     }
 }
 #selectCity{
-    font-family: myFont;
+    font-family: myFontTitr !important;
     color: var(--textBlack);
     cursor: pointer;
 }
@@ -51,7 +78,7 @@
    font-size: xx-large;
    font-family:'Roboto',sans-serif;
    color: var(--textDarkBrand);
-   background-color: #fff;
+   background-color: var(--textWhite);
    padding: 0.3rem;
    border-radius: 5px;
 }
@@ -66,41 +93,102 @@
     margin-left: 0.2rem;
  }
  .btnLetsGo{
-    background-color: var(--navBackground);
-    color: #fff;
+    background-color: var(--baseUiBackground);
+    color: var(--textBlack);
     font-weight: bold;
     font-size: x-large;
     padding: 0.5rem;
     padding-top: 0.3rem;
     border-radius: 5px;
+  
  }
- .cardCategory{
+ .btnLetsGo:hover{
+    opacity: 0.9;
+    color: var(--textWhite);
+}
+ .itemCategory{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-content: center;
     text-align: center;
-    border-radius: 20rem;
+    border-radius: 10rem;
     padding: 0.5rem;
-    background-color: #e6dede;
+    background-color:  var(--bgCardUi);
     color: var(--textBlack);
     cursor: pointer;
     
  }
- .cardCategory:hover{
-    background-color: #10ac84;
+ .itemCategory:hover{
+    background-color: var(--baseUiBackground);
     color: var(--textWhite);
 }
- .cardImg{
-    width: 80px;
-    height: 80px;
+ .itemCategoryImg{
+    width: 100px;
+    height: 100px;
     border-radius: 50%;
     padding: 0.5rem;
     margin: auto;
  }
- .cardText{
-    font-family: myFont;
+ .itemCategoryText{
+    font-family: myFontTitr;
     font-size: large;
     font-weight: bold;
     margin: 10px;
  }
+ .cardSuggestions{
+    background-color: var(--bgCardUi);
+    cursor: pointer;
+ }
+
+ .BonDiscount{
+    background-color: var(--bgCardUi);
+ }
+ .copy-text {
+    cursor: pointer;
+    color: blue;
+    text-decoration: underline;
+  }
+
+#siteFeatures h5{
+    font-weight: bold;
+    font-size: x-large;
+    margin-bottom: 0.5rem;
+}
+#siteFeatures p{
+    text-wrap: wrap;
+    font-family: myFontText;
+    font-size: large;
+}
+ #supportSection h4{
+    text-align: center;
+    font-weight: bold;
+    font-size: x-large;
+    font-family: myFontText;
+ }
+ #siteFeatures span{
+    font-size: 3rem;
+ }
+ footer a{
+    color: var(--baseUiBackground);
+    font-family: myFontTitr;
+    font-weight: bold;
+    font-size: large;
+    
+ }
+ footer a:hover{
+    opacity: 0.7;
+}
+footer i{
+    font-size: x-large;
+    font-weight: bold;
+    cursor: pointer;
+}
+footer img{
+    width: 100px;
+    height: 120px;
+
+}
+.footerTextPara{
+    font-size: 18px;
+}

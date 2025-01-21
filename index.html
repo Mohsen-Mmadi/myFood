@@ -14,8 +14,8 @@
 
 <body>
   <div id="root">
-    <nav
-      class="nav-bg w-full flex flex-col md:flex-row  md:justify-between text-white sticky shadow-lg shadow-black p-4">
+    <nav id="navbar"
+      class="nav-bg w-full flex flex-col  md:flex-row  md:justify-between text-white sticky shadow-lg shadow-black p-4">
       <div class="p-4 flex justify-center align-center">
         <a href="index.html" class="font-bold  text-brand ">MyFOOD</a>
         <img src="public/images/food-truck.png" class="w-14 h-14 mr-2" alt="">
@@ -26,7 +26,7 @@
           <option value="شیراز">شیراز</option>
         </select>
       </div>
-      <div class="flex flex-col md:flex-row justify-center align-center m-auto md:m-0  p-4 items">
+      <div class="flex flex-col md:flex-row justify-center align-center m-auto md:m-0  p-4 itemsNavbarText">
         <div class="searchItem">
           <!-- <input type="search" class="invisible md:visible" name="" id=""> -->
           <h3 class="inline textItems "><i class="bi bi-search icon "></i>جست و جو</h3>
@@ -43,71 +43,216 @@
     </nav>
     <section>
       <div class="grid grid-cols-1 md:grid-cols-2">
-
-        <div class="flex flex-col justify-center m-auto p-4">
-          <h2 class="textTitr">با مای فود راحتی را تجربه کنید</h2>
+        <div class=" flex flex-col justify-center m-auto p-4">
+          <h2 class="textTitr text-2xl m-2">با مای فود راحتی را تجربه کنید</h2>
           <div>
             <input type="text" disabled value="کرمان" class="bg-slate-200 p-1 ml-2 rounded-md">
-            <button class="btnLetsGo"> بزن بریم<i class="bi bi-chevron-left text-sm"></i></button>
+            <button class="btnLetsGo "> بزن بریم<i class="bi bi-chevron-left text-sm"></i></button>
           </div>
           <h4 class="font-bold text-lg">خوشمزه ها در انتظار توست</h4>&#128521;
         </div>
         <div class="justify-center align-center">
           <img src="public/images/retooran.jpg" alt="restooran" class="w-full h-80 ">
         </div>
-
       </div>
     </section>
     <h2 class="textTitr mr-10 mb-4 text-4xl">دنبال چی میگردی ؟ اینجا راحت تر پیداش کن</h2>
-    <section>
+    <section class="m-2">
       <div class="grid grid-cols-2 md:grid-cols-8 gap-4">
 
-        <div class="cardCategory">
-          <img src="public/images/restooranCatgoory.jpg" alt="restooran" class="cardImg">
-          <p class="cardText">رستوران</p>
+        <div class="itemCategory">
+          <img src="public/images/restooranCatgoory.jpg" alt="restooran" class="itemCategoryImg">
+          <p class="itemCategoryText">رستوران</p>
 
         </div>
-        <div class="cardCategory">
-          <img src="public/images/coffeshop.jpg" alt="coffeshop" class="cardImg">
-          <p class="cardText">کافی شاپ</p>
+        <div class="itemCategory">
+          <img src="public/images/coffeshop.jpg" alt="coffeshop" class="itemCategoryImg">
+          <p class="itemCategoryText">کافی شاپ</p>
         </div>
-        <div class="cardCategory">
-          <img src="public/images/butcher.jpg" alt="butcher" class="cardImg">
-          <p class="cardText">گوشت ومرغ</p>
+        <div class="itemCategory">
+          <img src="public/images/butcher.jpg" alt="butcher" class="itemCategoryImg">
+          <p class="itemCategoryText">گوشت ومرغ</p>
         </div>
-        <div class="cardCategory">
-          <img src="public/images/Fruit.jpg" alt="Fruit" class="cardImg">
-          <p class="cardText">میوه و سبزیجات</p>
+        <div class="itemCategory">
+          <img src="public/images/Fruit.jpg" alt="Fruit" class="itemCategoryImg">
+          <p class="itemCategoryText">میوه و سبزیجات</p>
         </div>
-        <div class="cardCategory">
-          <img src="public/images/market.jpg" alt="market" class="cardImg">
-          <p class="cardText">سوپر مارکت</p>
+        <div class="itemCategory">
+          <img src="public/images/market.jpg" alt="market" class="itemCategoryImg">
+          <p class="itemCategoryText">سوپر مارکت</p>
         </div>
-        <div class="cardCategory">
-          <img src="public/images/juice.jpg" alt="juice" class="cardImg">
-          <p class="cardText">بستنی و آبمیوه</p>
+        <div class="itemCategory">
+          <img src="public/images/juice.jpg" alt="juice" class="itemCategoryImg">
+          <p class="itemCategoryText">بستنی و آبمیوه</p>
         </div>
-        <div class="cardCategory">
-          <img src="public/images/rakery.jpg" alt="rakery" class="cardImg">
-          <p class="cardText">نانوایی</p>
+        <div class="itemCategory">
+          <img src="public/images/rakery.jpg" alt="rakery" class="itemCategoryImg">
+          <p class="itemCategoryText">نانوایی</p>
         </div>
-        <div class="cardCategory">
-          <img src="public/images/sweet.jpg" alt="sweet" class="cardImg">
-          <p class="cardText">شیرینی و تنقلات</p>
+        <div class="itemCategory">
+          <img src="public/images/sweet.jpg" alt="sweet" class="itemCategoryImg">
+          <p class="itemCategoryText">شیرینی و تنقلات</p>
         </div>
-        <!-- <div>
-          <img src="public/images/" alt="">
-          <p></p>
-        </div>
-        <div>
-          <img src="" alt="">
-          <p></p>
-        </div> -->
-
       </div>
     </section>
+    <h2 class="font-bold text-3xl p-4 m-4 mt-8 TitrCustom rounded-md text-white">پیشنهادات ما برای شما</h2>
+
+    <section class="m-4">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4 myFontText  ">
+        <div class="w-auto h-96 p-2  flex flex-col  cardSuggestions rounded-md">
+          <img src="public/images/kabab.jpg" class="w-full h-1/2 rounded-md" alt="kabab">
+          <h3 class="font-bold text-2xl myFontText">چلو کباب سلطانی </h3>
+          <p>یک نفره </p>
+          <h5 class="font-bold">120,000<span>تومان</span></h5>
+          <p class="text-slate-500 "><del class="">140,000</del><button
+              class="mr-2 bg-red-600 text-white p-1 rounded-md">15%</button> </p>
+          <hr>
+          <button class="bg-red-400  p-2 rounded-md m-2  hover:opacity-90 hover:text-white">افزودن به سبد خرید<i
+              class="bi bi-cart-plus mr-2"></i></button>
+        </div>
+        <div class="w-auto h-96 p-2  flex flex-col cardSuggestions rounded-md">
+          <img src="public/images/hambergerd.jpg" class="w-full h-1/2 rounded-md" alt="">
+          <h3 class="font-bold text-2xl myFontText">ساندویچ همبرگرد ویژه</h3>
+          <p>یک نفره </p>
+          <h5 class="font-bold">93,000<span>تومان</span></h5>
+          <p class="text-slate-500 "><del class="">110,000</del><button
+              class="mr-2 bg-red-600 text-white p-1 rounded-md">15%</button> </p>
+          <hr>
+          <button class="bg-red-400  p-2 rounded-md m-2  hover:opacity-90 hover:text-white">افزودن به سبد خرید<i
+              class="bi bi-cart-plus mr-2"></i></button>
+        </div>
+        <div class="w-auto h-96 p-2  flex flex-col cardSuggestions rounded-md">
+          <img src="public/images/sibVijeh.jpg" class="w-full h-1/2 rounded-md" alt="">
+          <h3 class="font-bold text-2xl myFontText">چیپس و پنیر مخصوص</h3>
+          <p>دو نفره </p>
+          <h5 class="font-bold">145,000<span>تومان</span></h5>
+          <p class="text-slate-500 "><del class="">160,000</del><button
+              class="mr-2 bg-red-600 text-white p-1 rounded-md">15%</button> </p>
+          <hr>
+          <button class="bg-red-400  p-2 rounded-md m-2  hover:opacity-90 hover:text-white">افزودن به سبد خرید<i
+              class="bi bi-cart-plus mr-2"></i></button>
+        </div>
+        <div class="w-auto h-96 p-2  flex flex-col cardSuggestions rounded-md">
+          <img src="public/images/bandari.jpg" class="w-full h-1/2 rounded-md" alt="">
+          <h3 class="font-bold text-2xl myFontText">ساندویچ بندری پنیری</h3>
+          <p>یک نفره </p>
+          <h5 class="font-bold">85,000<span>تومان</span></h5>
+          <p class="text-slate-500 "><del class="">100,000</del><button
+              class="mr-2 bg-red-600 text-white p-1 rounded-md">15%</button> </p>
+          <hr>
+          <button class="bg-red-400  p-2 rounded-md m-2  hover:opacity-90 hover:text-white">افزودن به سبد خرید<i
+              class="bi bi-cart-plus mr-2"></i></button>
+        </div>
+      </div>
+    </section>
+    <h2 class="font-bold text-3xl p-4 m-4 mt-8 TitrCustom rounded-md text-white"> بن های خرید برای شما</h2>
+
+    <section>
+      <div class="flex flex-col   md:flex-row md:justify-start m-4 gap-4  ">
+        <div class="BonDiscount w-80 h-52 p-2 rounded-md grid grid-cols-3 gap-2 ">
+          <div class="flex flex-col  justify-start text-center bg-green-300 ">
+            <div><i class="bi bi-gift-fill text-8xl text-red-500 "></i></div>
+            <h4 class="font-bold text-lg mt-2">M-VUE</h4>
+            <button class=" bg-slate-200 font-bold p-2 rounded-md border-dashed border-4 border-blue-300">کپی
+              کردن</button>
+          </div>
+          <div class="col-span-2 border-r-4 border-black border-dashed p-2">
+            <p>مبلغ تخفیف:40,000<span>تومان </span></p>
+            <a href="#" class="text-blue-800">مجموعه کیخسرو</a>
+            <p>حداقل خرید:120,000<span>تومان </span></p>
+            <p class="text-red-800">تاریخ انقضاء : 1403/12/10 </p>
+          </div>
+        </div>
+        <div class="BonDiscount w-80 h-52 p-2 rounded-md grid grid-cols-3 gap-2 ">
+          <div class="flex flex-col  justify-start text-center bg-green-300 ">
+            <div class=""><i class="bi bi-gift-fill text-8xl text-red-500 "></i></div>
+            <h4 class="font-bold text-lg mt-2">M-REACT</h4>
+            <button class=" bg-slate-200 font-bold p-2 rounded-md border-dashed border-4 border-blue-300">کپی
+              کردن</button>
+          </div>
+          <div class="col-span-2 border-r-4 border-black border-dashed p-2">
+            <p>50,000<span>تومان </span></p>
+            <a href="#" class="text-blue-800">مجموعه پاندا</a>
+            <p>حداقل خرید:210,000<span>تومان </span></p>
+            <p class="text-red-800">تاریخ انقضاء : 1403/12/10 </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <h2 class="font-bold text-3xl p-4 m-4 mt-8 text-black myFontTitr rounded-md ">چرا مای فود؟</h2>
+    <section id="siteFeatures">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-2 m-4 justify-center content-center">
+        <div class="flex flex-col text-center  bgCardUi p-2 rounded-md">
+          <span><i class="bi bi-speedometer2 iconColor"></i></span>
+          <h5>سریعه!</h5>
+          <p>در کمترین زمان ممکن سفارشت رو تحویل میده.</p>
+        </div>
+        <div class="flex flex-col text-center bgCardUi p-2 rounded-md">
+          <span><i class="bi bi-fire iconColor"></i></span>
+          <h5>قویه!</h5>
+          <p>هر مشکل و سوالی داشتی، کافیه با پشتیبانی تماس بگیری .</p>
+        </div>
+        <div class="flex flex-col text-center bgCardUi p-2 rounded-md">
+          <span><i class="bi bi-cup-hot-fill iconColor"></i></span>
+          <h5>راحته!</h5>
+          <p>انتخاب روش پرداختت با خودته. آنلاین یا با کارتخوان در محل؟</p>
+        </div>
+        <div class="flex flex-col text-center bgCardUi p-2 rounded-md">
+          <span><i class="bi bi-wrench-adjustable iconColor"></i></span>
+          <h5>کاربردیه!</h5>
+          <p>با یک سفارش، همزمان از چند فروشگاه خرید میکنی.</p>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="flex flex-col md:flex-row justify-between bgCardUi p-2 rounded-md m-4" id="supportSection">
+        <div>
+          <h4>رسیدگی به انتقادات و پیشنهادات: 03433217187</h4>
+        </div>
+        <div>
+          <h4>پشتیبانی سفارش:09904438396</h4>
+        </div>
+        <div>
+          <h4>ساعت کاری: همه روزه 8 الی 24</h4>
+        </div>
+      </div>
+    </section>
+    <footer class="bgCardUi p-2 m-4">
+      <div class="mb-4"><a href="index.html" class="font-bold  text-brand ">MyFOOD</a></div>
+      <div class="grid grid-cols-2 gap-4 md:grid-cols-3 ">
+        <div class="flex flex-col myFontText ">
+          <p class="footerTextPara"> لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان
+            گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است
+          </p>
+          <div class="justify-start">
+            <i class="bi bi-whatsapp iconColor"></i>
+            <i class="bi bi-instagram iconColor"></i>
+            <i class="bi bi-telephone-fill iconColor"></i>
+          </div>
+        </div>
+        <div class="flex flex-row gap-4 justify-center">
+          <div class="flex flex-col">
+            <a href="#" class="mb-2">درباره ما</a>
+            <a href="#" class="mb-2">ارتباط با ما</a>
+            <a href="#" class="mb-2">پشتیبانی</a>
+          </div>
+          <div class="flex flex-col">
+            <a href="#" class="mb-2">محصولات</a>
+            <a href="#" class="mb-2">نظرات</a>
+            <a href="#" class="mb-2">پیشنهدات</a>
+          </div>
+        </div>
+        <div class="flex flex-row col-span-2 md:col-span-1  justify-center md:justify-end">
+          <img src="public/images/estandard.png" alt="estandard">
+          <img src="public/images/sibeSalamat.png" alt="sibeSalamat">
+          <img src="public/images/iconEtemad.png" alt="iconEtemad">
+        </div>
+      </div>
+      <div class="text-center mt-4 myFontTitr text-xl">تمامی امتیاز این سایت در انحصار جناب <i>آقای محمدی</i> و سایت <i>مای فود</i> می باشد و هرگونه کپی برداری از این سایت پیگرد قانونی دارد&copy;</div>
+    </footer>
   </div>
-  <script type="module" src="/main.js"></script>
+
+  <script src="main.js"></script>
 </body>
 
 </html>
